@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YasApp.Pages.ColecaoPage"
+             NavigationPage.HasNavigationBar="False"
+             Title="Chic Boutique"
+             Background="#FFF4EA">
+    <ScrollView>
+    <VerticalStackLayout>
+        <Label 
+            Text="Nova Coleção Outono"
+            HorizontalOptions="Center"
+            Background="#FFF4EA"
+            FontAttributes="Bold" FontSize="20"/>
+        <Image Source="fundo.png"></Image>
+    </VerticalStackLayout></ScrollView>
+</ContentPage>

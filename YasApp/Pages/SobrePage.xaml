@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YasApp.Pages.SobrePage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#FFF4EA"
+             Title="Chic Boutique">
+    <ScrollView>
+    <VerticalStackLayout>
+        <Label 
+            Text="Sobre nós:"
+            FontSize="Title"
+            FontAttributes="Bold"
+            
+            Margin="30,0,0,0"
+            VerticalOptions="Start" 
+            HorizontalOptions="Start" />
+
+      
+        <Label 
+            
+            Text="Bem-vindo à Chic Boutique, onde a moda se encontra com a delicadeza e a sofisticação. Nossa missão é oferecer uma experiência única de estilo para mulheres. 
+O que nos torna especiais inclui:"
+            
+            FontSize="Subtitle"
+            Margin="30,20,20,20"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            CharacterSpacing="1"
+            LineBreakMode="WordWrap"
+            LineHeight="1.8"
+    
+           
+            />
+
+        <Label 
+            
+            Text="Seleção Exclusiva: Cada peça é escolhida para refletir sofisticação e delicadeza."
+            
+            FontSize="Subtitle"
+            Margin="30,20,20,20"
+            FontAttributes="Bold"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center"
+            CharacterSpacing="1"
+            LineBreakMode="WordWrap"
+            LineHeight="1.8" 
+            />
+
+        <Label 
+     
+        Text="Atendimento Personalizado: Oferecemos um atendimento excepcional para ajudar a encontrar a peça perfeita que realce a beleza e o estilo único de cada cliente."     
+     FontSize="Subtitle"
+            Margin="30,20,20,20"
+     FontAttributes="Bold"
+     VerticalOptions="Center" 
+     HorizontalOptions="Center"
+     CharacterSpacing="1"
+     LineBreakMode="WordWrap"
+     LineHeight="1.8"
+    
+    
+     />
+
+        <Label 
+        Text="Ambiente Acolhedor: Nossa boutique proporciona um ambiente acolhedor e luxuoso, onde cada visita é uma experiência encantadora!"
+
+            
+            FontSize="Subtitle"
+            Margin="30,20,20,20"
+FontAttributes="Bold"
+VerticalOptions="Center" 
+HorizontalOptions="Center"
+CharacterSpacing="1"
+LineBreakMode="WordWrap"
+LineHeight="1.8"
+    
+    
+/>
+
+    </VerticalStackLayout>
+</ScrollView>
+</ContentPage>

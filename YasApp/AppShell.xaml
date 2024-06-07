@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="YasApp.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:local="clr-namespace:YasApp"
+    xmlns:pages="clr-namespace:YasApp.Pages"
+    Shell.FlyoutBehavior="Flyout"
+    Shell.FlyoutBackgroundColor="#FFF4EA">
+
+<Shell.Resources>
+    <ResourceDictionary>
+        <Style TargetType="FlyoutItem">
+                <Setter Property="Shell.BackgroundColor" Value="#FFF4EA" />
+            <Setter Property="Shell.ForegroundColor" Value="Black" />
+            <Setter Property="Shell.TitleColor" Value="Black" />
+            <Setter Property="Shell.DisabledColor" Value="Gray" />
+            <Setter Property="Shell.UnselectedColor" Value="Gray" />
+        </Style>
+    </ResourceDictionary>
+</Shell.Resources>
+
+    <FlyoutItem Title="Home" Icon="home.svg">
+      <ShellContent Route="home" ContentTemplate="{DataTemplate pages:HomePage}" />
+    </FlyoutItem>
+    
+    
+    <FlyoutItem Title="Perfil" Icon="perfil2.svg">
+        <ShellContent Route="perfil" ContentTemplate="{DataTemplate pages:PerfilPage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Sobre" Icon="sobre.svg">
+        <ShellContent Route="sobre" ContentTemplate="{DataTemplate pages:SobrePage}" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Nova Coleção Outono" Icon="colecao.svg">
+        <ShellContent Route="colecao" ContentTemplate="{DataTemplate pages:ColecaoPage}" />
+        
+    </FlyoutItem>
+
+
+
+
+
+
+</Shell>

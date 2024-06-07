@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YasApp.Pages.PerfilPage"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="#FFF4EA"
+             Title="Chic Boutique">
+    
+    <VerticalStackLayout>
+        <Label 
+            Text="Perfil"
+            Margin="8"
+            FontSize="Title"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+
+        <ImageButton Source="perfil.png" x:Name="Ftperfil" WidthRequest="150" Margin="10" ></ImageButton>
+
+
+        <Label x:Name="lblNome"
+               Margin="10"
+               Text="Nome Completo:"
+               TextColor="Black"
+               FontSize="Subtitle"/>
+
+        <Entry x:Name="txtNome"
+               Text="{Binding Nome}"
+               Margin="10"
+               BackgroundColor="White"
+               Placeholder="Editar"
+               Keyboard="Text"/>
+
+        <Label x:Name="lblEmail"
+               Margin="10"
+               Text="Email:"
+               TextColor="Black"
+               FontSize="Subtitle"/>
+
+        <Entry x:Name="txtEmail"
+               Text="{Binding Email}"
+               Margin="10"
+               BackgroundColor="White"
+               Placeholder="Editar"
+               Keyboard="Email"/>
+
+        <Label x:Name="lblSenha"
+               Margin="10"
+               FontSize="Subtitle"
+               Text="Senha:"
+               TextColor="Black"/>
+
+        <Entry Placeholder="Editar"
+               x:Name="txtSenha"
+               Text="{Binding Senha}"
+               Margin="10"
+               BackgroundColor="White"
+               IsPassword="True"/>
+
+        <Button Text="Atualizar"
+                TextColor="Black"
+                Margin="30"
+                WidthRequest="250"
+                x:Name="btnAtualizar"
+                Clicked="btnAtualizar_Clicked"
+                BackgroundColor="#CCA58A"/>
+     </VerticalStackLayout>
+</ContentPage>

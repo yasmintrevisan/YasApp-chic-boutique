@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YasApp.Pages.EditaUsuarioPage"
+             Title="EditaUsuarioPage"
+             BackgroundColor="#FFF4EA"
+             NavigationPage.HasNavigationBar="False">
+
+    <VerticalStackLayout Margin="15"
+                     Padding="15"
+                     Spacing="5">
+
+        <Label Text="Cadastre-se"
+           Margin="30"
+           TextColor="Black"
+           VerticalOptions="Center"
+           HorizontalOptions="Center"
+           FontSize="Title"/>
+
+        <Label Text="Informações pessoais "
+              Margin="20"
+              TextColor="Black"
+              VerticalOptions="Start"
+              HorizontalOptions="Start"
+              FontSize="Subtitle"/>
+
+        <Label x:Name="lblNome"
+               Margin="5"
+               Text="Nome Completo:"
+               TextColor="Black"
+               FontSize="Subtitle"/>
+
+        <Entry x:Name="txtNome"
+               Text="{Binding Nome}"
+               Margin="5"
+               BackgroundColor="White"
+               Placeholder="Digite seu Nome"
+               Keyboard="Text"/>
+
+        <Label x:Name="lblEmail"
+           Margin="5"
+           Text="Email:"
+           TextColor="Black"
+           FontSize="Subtitle"/>
+
+        <Entry x:Name="txtEmail"
+               Text="{Binding Email}"
+               Margin="5"
+               BackgroundColor="White"
+               Placeholder="Digite seu Email"
+               Keyboard="Email"/>
+
+        <Label x:Name="lblSenha"
+           Margin="5"
+           FontSize="Subtitle"
+           Text="Senha:"
+           TextColor="Black"/>
+
+        <Entry Placeholder="Digite sua Senha"
+           x:Name="txtSenha"
+           Text="{Binding Senha}"
+           Margin="5"
+           BackgroundColor="White"
+           IsPassword="True"/>
+
+        <Button Text="Cadastrar"
+            TextColor="Black"
+            Margin="30"
+            WidthRequest="250"
+            x:Name="btnCadastrar"
+            Clicked="btnCadastrar_Clicked"
+            BackgroundColor="#CCA58A"/>
+
+        <Button Text="Voltar"
+            TextColor="Black"
+            Margin="5"
+            WidthRequest="250"
+            x:Name="btnVoltar"
+            Clicked="btnVoltar_Clicked" 
+            BackgroundColor="#CCA58A"/>
+
+    </VerticalStackLayout>
+</ContentPage>

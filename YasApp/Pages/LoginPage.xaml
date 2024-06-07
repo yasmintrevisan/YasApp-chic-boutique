@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="YasApp.Pages.LoginPage"
+             Title="LoginPage"
+             BackgroundColor="#FFF4EA"
+             NavigationPage.HasNavigationBar="False">
+
+
+
+    <VerticalStackLayout
+        Padding="5" Margin="15,80">
+        <Label Text="Login"
+               TextColor="Black"
+               Margin="15"
+               VerticalOptions="Center"
+               HorizontalOptions="Center"
+               FontSize="Title"/>
+
+        <Image Source="perfil.png" WidthRequest="150" Margin="10"></Image>
+        
+        <FlexLayout Position="Absolute" HorizontalOptions="Start">
+            <Image Source="email.svg" HeightRequest="30" Margin="03,10,05,0"></Image>
+            <Label x:Name="lblEmail"
+                     Text="Email"
+                     Margin="0,10,0,0"
+                     TextColor="Black"
+                     FontSize="Subtitle"/>
+        </FlexLayout>
+
+        <Frame CornerRadius="10"  
+               BorderColor="White" 
+               Padding="0"
+               >
+            <FlexLayout HorizontalOptions="Start" Margin="05" Padding="10" BackgroundColor="White">
+                <Entry x:Name="txtEmail" BackgroundColor="White"
+                       Placeholder="Digite seu Email"
+                       Keyboard="Email"/>
+            </FlexLayout>
+        </Frame>
+        <FlexLayout Position="Absolute" HorizontalOptions="Start">
+            <Image Source="lock.svg" HeightRequest="30" Margin="03,10,05,0"></Image>
+            <Label x:Name="lblSenha"
+               Margin="0,10,0,0"
+               FontSize="Subtitle"
+               Text="Senha"
+               TextColor="Black"/>
+        </FlexLayout>
+
+        <Frame CornerRadius="10"  
+        BorderColor="White" 
+        Padding="0">
+
+            <FlexLayout HorizontalOptions="Start" Margin="05" Padding="10" BackgroundColor="White">
+        <Entry Placeholder="Digite sua Senha"
+               x:Name="txtSenha"
+               BackgroundColor="White"
+               IsPassword="True"
+               ClearButtonVisibility="WhileEditing"/>
+           </FlexLayout>
+        </Frame>
+
+        <Button Text="ENTRAR"
+                TextColor="Black"
+                WidthRequest="250"
+                Margin="40"
+                x:Name="btnEntrar"
+                Clicked="btnEntrar_Clicked"
+                BackgroundColor="#CCA58A"/>
+
+        <Button Text="Criar uma conta"
+                TextColor="Black"
+                WidthRequest="250"
+                Margin="20"
+                x:Name="btnCriarumaconta"
+                Clicked="btnRegistrar_Clicked"
+                BackgroundColor="#F2E7DC"/>
+    </VerticalStackLayout>
+</ContentPage>
